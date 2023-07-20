@@ -66,11 +66,11 @@
   ],
   "types": "dist/index.d.ts",
   "peerDependencies": {
+    "postcss": "^8.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-swipeable": "^7.0.0",
-    "sass": "^1.55.0",
-    "postcss": "^8.4.16"
+    "sass": "^1.55.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
@@ -78,5 +78,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/daniel-ilin/react-configurable-carousel.git"
+  },
+  "dependencies": {
+    "postcss": "^8.4.26",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3"
   }
 }

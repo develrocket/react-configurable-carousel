@@ -106,7 +106,7 @@ $z-index-animation-delay: 0.1s;
 
     &.showing {
         opacity: 1;
-        z-index: 3;
+        z-index: 10;
         transition: transform $animation-time, width $animation-time, height $animation-time;
 
         &.threed {
@@ -121,7 +121,7 @@ $z-index-animation-delay: 0.1s;
     }
 
     &.prev {
-        z-index: 2;
+        z-index: 9;
 
         &.leftClick {
             z-index: 1;
@@ -130,7 +130,7 @@ $z-index-animation-delay: 0.1s;
 
         &.threed {
             opacity: 1;
-            transform: translateX(-80%) scale(0.92);
+            transform: translateX(-40%) scale(0.8);
             cursor: pointer;
         }
         &.flat {
@@ -142,8 +142,30 @@ $z-index-animation-delay: 0.1s;
         }
     }
 
+    &.doublePrev {
+        z-index: 8;
+
+        &.leftClick {
+            z-index: 1;
+            opacity: 0.4;
+        }
+
+        &.threed {
+            opacity: 1;
+            transform: translateX(-80%) scale(0.6);
+            cursor: pointer;
+        }
+        &.flat {
+            opacity: 0;
+            transform: translateX(-100%);
+            cursor: pointer;
+            transition: transform $animation-time, width $animation-time, height $animation-time,
+            opacity $animation-time;
+        }
+    }
+
     &.next {
-        z-index: 1;
+        z-index: 9;
 
         &.leftClick {
             z-index: 2;
@@ -151,7 +173,7 @@ $z-index-animation-delay: 0.1s;
 
         &.threed {
             opacity: 1;
-            transform: translateX(80%) scale(0.92);
+            transform: translateX(40%) scale(0.8);
             cursor: pointer;
         }
         &.flat {
@@ -160,6 +182,27 @@ $z-index-animation-delay: 0.1s;
             cursor: pointer;
             transition: transform $animation-time, width $animation-time, height $animation-time,
                 opacity $animation-time;
+        }
+    }
+
+    &.doubleNext {
+        z-index: 8;
+
+        &.leftClick {
+            z-index: 2;
+        }
+
+        &.threed {
+            opacity: 1;
+            transform: translateX(80%) scale(0.6);
+            cursor: pointer;
+        }
+        &.flat {
+            opacity: 0;
+            transform: translateX(100%);
+            cursor: pointer;
+            transition: transform $animation-time, width $animation-time, height $animation-time,
+            opacity $animation-time;
         }
     }
 }
