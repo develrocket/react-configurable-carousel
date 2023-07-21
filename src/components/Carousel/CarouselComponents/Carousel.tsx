@@ -254,7 +254,6 @@ const Carousel = React.forwardRef<CarouselControllerHandle, CarouselProps>(
                                             : `${styles["arrowButtonContainer"]} ${styles["flat"]}  ${styles["left"]}`
                                     }
                                 >
-                                    <Arrow direction={"left"}/>
                                 </button>
                             )}
                             <div className={styles.swipeContainer} {...handlers}>
@@ -272,7 +271,6 @@ const Carousel = React.forwardRef<CarouselControllerHandle, CarouselProps>(
                                     }
                                     onClick={() => clickHandler("R")}
                                 >
-                                    <Arrow direction={"right"}/>
                                 </button>
                             )}
                         </div>

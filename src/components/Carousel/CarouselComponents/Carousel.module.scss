@@ -49,12 +49,83 @@ $z-index-animation-delay: 0.1s;
 
     &.left {
         position: absolute;
-        left: 0px;
+        left: max(calc((100% - 1310px) / 2), 20px);
+        z-index: 100;
+        width: 40px;
+        height: 40px;
+        background: #272B30;
+        box-shadow: 0px 2px 8px 0px #00000014;
+        border: 1px solid #ffffff0a;
+        border-radius: 40px;
+        color: transparent;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            filter: brightness(1.5);
+
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            transform: rotate(45deg) translate(2.5px, 2.5px);
+            background: #fff;
+            left: 12px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            transform: rotate(-45deg) translate(2.5px, -2.5px);
+            background: #fff;
+            left: 12px;
+        }
+
     }
 
     &.right {
         position: absolute;
-        right: 0px;
+        right: max(calc((100% - 1310px) / 2), 20px);
+        z-index: 100;
+        width: 40px;
+        height: 40px;
+        background: #272B30;
+        box-shadow: 0px 2px 8px 0px #00000014;
+        border: 1px solid #ffffff0a;
+        border-radius: 40px;
+        color: transparent;
+        font-size: 0;
+        line-height: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            filter: brightness(1.5);
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute !important;
+            width: 10px;
+            height: 2px;
+            transform: rotate(45deg) translate(-2.5px, -2.5px);
+            background: #fff;
+            right: 12px;
+
+        }
+        &::after {
+            content: "";
+            position: absolute !important;;
+            width: 10px;
+            height: 2px;
+            transform: rotate(-45deg) translate(-2.5px, 2.5px);
+            background: #fff;
+            right: 12px;
+        }
     }
 }
 
@@ -122,9 +193,10 @@ $z-index-animation-delay: 0.1s;
 
     &.prev {
         z-index: 9;
+        opacity: 0.7 !important;
 
         &.leftClick {
-            z-index: 1;
+            z-index: 9;
             opacity: 0.4;
         }
 
@@ -144,9 +216,10 @@ $z-index-animation-delay: 0.1s;
 
     &.doublePrev {
         z-index: 8;
+        opacity: 0.4 !important;
 
         &.leftClick {
-            z-index: 1;
+            z-index: 8;
             opacity: 0.4;
         }
 
@@ -166,9 +239,10 @@ $z-index-animation-delay: 0.1s;
 
     &.next {
         z-index: 9;
+        opacity: 0.7 !important;
 
         &.leftClick {
-            z-index: 2;
+            z-index: 9;
         }
 
         &.threed {
@@ -187,9 +261,10 @@ $z-index-animation-delay: 0.1s;
 
     &.doubleNext {
         z-index: 8;
+        opacity: 0.4 !important;
 
         &.leftClick {
-            z-index: 2;
+            z-index: 8;
         }
 
         &.threed {

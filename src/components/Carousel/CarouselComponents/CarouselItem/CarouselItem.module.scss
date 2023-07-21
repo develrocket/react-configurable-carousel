@@ -4,11 +4,16 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: auto;
+    min-width: 300px;
 }
 
 .firstRowColumn {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
 }
 
 .overlay {
@@ -26,7 +31,7 @@
 
 .darkened {
     transition: all 0.6s;
-    background: rgba(56, 56, 56, 1);
+    background: none;
     opacity: 0.62;
     pointer-events: all;
 }
