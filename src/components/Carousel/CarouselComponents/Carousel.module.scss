@@ -193,7 +193,7 @@ $z-index-animation-delay: 0.1s;
 
     &.prev {
         z-index: 9;
-        opacity: 0.7 !important;
+        opacity: 0.5 !important;
 
         &.leftClick {
             z-index: 9;
@@ -216,16 +216,15 @@ $z-index-animation-delay: 0.1s;
 
     &.doublePrev {
         z-index: 8;
-        opacity: 0.4 !important;
+        opacity: 0.15 !important;
 
         &.leftClick {
             z-index: 8;
-            opacity: 0.4;
         }
 
         &.threed {
             opacity: 1;
-            transform: translateX(-80%) scale(0.6);
+            transform: translateX(-65%) scale(0.5);
             cursor: pointer;
         }
         &.flat {
@@ -239,7 +238,7 @@ $z-index-animation-delay: 0.1s;
 
     &.next {
         z-index: 9;
-        opacity: 0.7 !important;
+        opacity: 0.5 !important;
 
         &.leftClick {
             z-index: 9;
@@ -261,7 +260,7 @@ $z-index-animation-delay: 0.1s;
 
     &.doubleNext {
         z-index: 8;
-        opacity: 0.4 !important;
+        opacity: 0.15 !important;
 
         &.leftClick {
             z-index: 8;
@@ -269,7 +268,7 @@ $z-index-animation-delay: 0.1s;
 
         &.threed {
             opacity: 1;
-            transform: translateX(80%) scale(0.6);
+            transform: translateX(65%) scale(0.5);
             cursor: pointer;
         }
         &.flat {
